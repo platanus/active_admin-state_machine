@@ -37,7 +37,7 @@ module ActiveAdmin
               link_options[:data][:confirm] = instance_exec(&confirmation)
             end
 
-            link_options[:class] = "btn btn-large"
+            link_options[:class] = "btn btn-large #{plural}-#{action}-state-button"
             link_options[:method] = http_verb
 
             link_to label, path, link_options
